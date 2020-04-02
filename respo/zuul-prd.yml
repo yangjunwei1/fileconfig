@@ -6,7 +6,7 @@ spring:
   boot:
     admin:
       client:
-        url: http://localhost:8084
+        url: http://192.168.1.9:8084
 server:
   port: 8005
   servlet:
@@ -14,7 +14,7 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:7003/eureka/
+      defaultZone: http://192.168.1.9:7003/eureka/
 zuul:
   routes:
     api-a:

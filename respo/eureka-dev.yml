@@ -3,7 +3,7 @@ server:
   port: 7003
 eureka:
   instance:
-    hostname: localhost     # eureka服务端的实力名称
+    hostname: 192.168.1.9     # eureka服务端的实力名称
   client:
     fetch-registry: false  # false表示自己就是注册中心。我的职责就是维护服务实例，并不需要去检索服务
     register-with-eureka: false   # false表示自己不需要向注册中心注册自己
@@ -17,4 +17,4 @@ spring:
   boot:
     admin:
       client:
-        url: http://localhost:8084
+        url: http://192.168.1.9:8084
